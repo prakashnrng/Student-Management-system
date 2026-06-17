@@ -1,0 +1,11 @@
+127.0.0.1 - - [02/Jan/2026:21:08:04 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:08:05 +0530] "GET /StudentManagementPortal/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:08:05 +0530] "GET /StudentManagementPortal/login.jsp HTTP/1.1" 200 433
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:08:05 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:08:14 +0530] "POST /StudentManagementPortal/LoginServlet HTTP/1.1" 200 1194
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:08:19 +0530] "GET /StudentManagementPortal/ListBatchServlet HTTP/1.1" 200 4081
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:08:20 +0530] "GET /StudentManagementPortal/BatchWiseStudentsServlet?id=3 HTTP/1.1" 200 2846
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:16:34 +0530] "GET /StudentManagementPortal/BatchWiseStudentsServlet?page=1&id=3&keyword=null HTTP/1.1" 200 1428
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:16:37 +0530] "GET /StudentManagementPortal/home HTTP/1.1" 200 1191
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:16:38 +0530] "GET /StudentManagementPortal/ListBatchServlet HTTP/1.1" 200 4081
+0:0:0:0:0:0:0:1 - - [02/Jan/2026:21:16:39 +0530] "GET /StudentManagementPortal/BatchWiseStudentsServlet?id=3 HTTP/1.1" 200 2846

@@ -1,0 +1,55 @@
+batch table
+----------------
+create table batch(
+id int  auto_increment primary key,
+name varchar(100),
+timing varchar(100),
+trainer varchar(100)
+);
+
+
+create table users(
+id int auto_increment primary key,
+username varchar(50) unique not null,
+password varchar(255) not null,
+role varchar(20) default 'admin',
+created_at timestamp default current_timestamp
+);
+
+INSERT INTO users (username, password)
+VALUES ('prakash', '$2a$10$2K4H8ymG3Q0oS6Qd6hwGeO3KkF5C7j5x7n9qZvSBxY2z4O7H2uWQ6');
+
+alter table student
+          add column password varchar(255),
+          add column status varchar(20) default 'active';
+
+
+update student set password='$2a$10$SkX4Pon1M3O9x5YgH8pQTeQeXU/bdKiDdKdugQvZENbERJbSvA7bm'
+where student_id=4;
+
+
+create table student_login_log(
+id int primary key auto_increment,
+student_id int,
+login_time datetime,
+ip_address varchar(50)
+);
+
+create table admins(
+id int primary key auto_increment,
+name varchar(100),
+email varchar(100) unique,
+password varchar(255),
+role varchar(20) default 'admin',
+status varchar(20) default 'active'
+);
+
+
+
+alter table student
+
+add column is_logged_in tinyint(1) default 0,
+add column session_id varchar(100),
+add column last_login datetime;
+
+
